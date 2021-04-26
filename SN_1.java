@@ -97,5 +97,5 @@ public class IOcalls {
         System.out.println (ex.toString());
       }
   }
-  //should not trigger any vulnerability detection
+  //should not trigger any vulnerability detection test
 }
