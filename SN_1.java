@@ -42,6 +42,8 @@ public class RequestProcessor {
 ​
 public class SQLInjection {
   public boolean authenticate(javax.servlet.http.HttpServletRequest request, java.sql.Connection connection) throws SQLException {
+  
+  // trigger the sql exception?
     String user = request.getParameter("user");
     String pass = request.getParameter("pass");
 ​
