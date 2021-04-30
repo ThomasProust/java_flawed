@@ -58,7 +58,7 @@ public class SQLInjection {
 //     SELECT * FROM users
 ​
     java.sql.Statement statement = connection.createStatement();
-    java.sql.ResultSet resultSet = statement.executeQuery(query); // Noncompliant
+    java.sql.ResultSet resultSet = statement.executeQuery(query); // very Noncompliant
     return resultSet.next();
   }
 }
