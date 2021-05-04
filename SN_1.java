@@ -29,9 +29,9 @@ public class Redirection {
 public class RequestProcessor {
   protected void processRequest(HttpServletRequest request) {
     ServletInputStream sis = request.getInputStream();
-    ObjectInputStream ois = new ObjectInputStream(sis);
+    ObjectInputStream ois = new ObjectInputStream(sis); //test
     
-    Object obj = ois.readObject(); // Noncompliant
+    Object obj = ois.readObject(); // Noncompliant //test
   }
 }
 ​
