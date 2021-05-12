@@ -29,7 +29,7 @@ public class Redirection {
 public class RequestProcessor {
   protected void processRequest(HttpServletRequest request) {
     ServletInputStream sis = request.getInputStream();
-    ObjectInputStream ois = new ObjectInputStream(sis);
+    ObjectInputStream ois = new ObjectInputStream(sis);// findings here only
     
     Object obj = ois.readObject(); // Noncompliant
   }
