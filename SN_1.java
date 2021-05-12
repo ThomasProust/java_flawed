@@ -29,7 +29,7 @@ public class Redirection {
 public class RequestProcessor {
   protected void processRequest(HttpServletRequest request) {
     ServletInputStream sis = request.getInputStream();
-    ObjectInputStream ois = new ObjectInputStream(sis); //test
+    ObjectInputStream ois = new ObjectInputStream(sis); //we should only see this vulnerability
     
     Object obj = ois.readObject(); // Noncompliant
   }
